@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".QuranFragment"
+    android:orientation="vertical"
+    android:background="#EEF1F2">
+
+
+    <androidx.appcompat.widget.Toolbar
+     android:id="@+id/toolbar"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:background="#527DA3"
+     >
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginTop="5dp"
+         >
+
+     <ImageView
+         android:layout_width="40dp"
+         android:layout_height="30dp"
+         android:src="@drawable/quran_icon_2"
+         android:layout_toLeftOf="@id/text"
+         android:layout_centerInParent="true"
+         />
+     <TextView
+         android:id="@+id/text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=" আল কুরআন"
+         android:fontFamily="@font/kalpurush"
+         android:textSize="25sp"
+         android:textColor="@color/white"
+        android:layout_centerInParent="true"
+         />
+     </RelativeLayout>
+ </androidx.appcompat.widget.Toolbar>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+            android:layout_below="@id/toolbar"
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="#DFDEE3"
+            app:tabSelectedTextColor="#FFFFFF"
+            android:background="#527DA3"
+            app:tabMode="scrollable"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorFullWidth="true"
+            >
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="দোয়া"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="দৈনন্দিন প্রয়োজনীয় দোয়া"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="মুনাজাত"
+                />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tablayout"
+        android:id="@+id/framelay"
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

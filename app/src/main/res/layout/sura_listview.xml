@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:cardCornerRadius="7dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:text="০১"
+                android:textSize="22sp"
+                android:fontFamily="@font/kalpurush"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:layout_centerVertical="true"
+                android:background="@drawable/quran_custom_style"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_toRightOf="@id/text1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:fontFamily="@font/kalpurush"
+                android:text="সূরা ফাতিহা"
+                android:textColor="#F01E1E1E"
+                android:textSize="20sp"
+                android:layout_marginLeft="18dp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:id="@+id/text3"
+                android:layout_toRightOf="@id/text1"
+                android:layout_below="@id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/kalpurush"
+                android:text="আরবি,আরবি উচ্চারণ,বাংলা অনুবাদ।"
+                android:textColor="#0C0A0A"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="18dp"
+                android:gravity="center"
+                android:minLines="1"
+                android:ellipsize="end"
+                android:textStyle="normal"
+                />
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/dua_icon"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:layout_marginRight="3dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

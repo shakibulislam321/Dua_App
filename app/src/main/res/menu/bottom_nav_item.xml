@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+       android:id="@+id/home"
+       android:title="হোম"
+       android:icon="@drawable/home_icon"
+       />
+    <item
+        android:id="@+id/quran"
+        android:title="আল কুরআন"
+        android:icon="@drawable/quran_icon"
+        />
+    <item
+        android:id="@+id/tasbih"
+        android:title="তাসবিহ"
+        android:icon="@drawable/tasbih_icon"
+        />
+    <item
+        android:id="@+id/photo"
+        android:title="Photo"
+        android:icon="@drawable/photo_icon"
+        />
+
+
+
+
+</menu>

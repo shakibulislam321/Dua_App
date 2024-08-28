@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeNamaja"
+    android:background="#eef1f2">
+
+
+   <LinearLayout
+        android:id="@+id/namajlay1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="#1f9370"
+        >
+        <ImageView
+            android:id="@+id/namajimage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="নামাজের দোয়া ও তাসবিহ্"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/unicode"
+            android:textStyle="normal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/namajlay2"
+        android:layout_below="@id/namajlay1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/bglay1"
+            android:layout_weight="1"
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/namajtext1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="নামাজের বিভিন্ন অংশের দোয়া"
+                android:textSize="18sp"
+                android:padding="7dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/unicode"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bglay2"
+            android:layout_weight="1"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            >
+            <TextView
+                android:id="@+id/namajtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ওযুর নিয়ম"
+                android:textSize="18sp"
+                android:padding="7dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/unicode"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bglay3"
+            android:layout_weight="1"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/namajtext3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="নামাজের তাসবিহ্"
+                android:textSize="18sp"
+                android:padding="7dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/unicode"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+
+ <FrameLayout
+     android:id="@+id/namajframelay"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_below="@id/namajlay2"
+     />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="StatusBarColor" parent=""> <item name="android:statusBarColor">#B15050</item> </style>
+
+
+
+
+</resources>
